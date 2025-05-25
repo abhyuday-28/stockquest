@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files
+.env
+*.env
+client/.env
+server/.env
+
+# Build files
+client/build/
+server/build/
+
+# Firebase service account key
+*.json
