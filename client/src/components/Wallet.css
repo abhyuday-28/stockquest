@@ -1,0 +1,191 @@
+/* Wallet Container */
+.wallet-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 2x2 Grid Layout */
+.wallet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.wallet-box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.wallet-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Box Headers and Values */
+.box-header {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.box-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Special Box Styles */
+.balance-box {
+  border-top: 4px solid #3b82f6;
+}
+
+.invested-box {
+  border-top: 4px solid #8b5cf6;
+}
+
+.value-box {
+  border-top: 4px solid #10b981;
+}
+
+.profit-box {
+  border-top: 4px solid #10b981;
+}
+
+.loss-box {
+  border-top: 4px solid #ef4444;
+}
+
+.profit-box .box-value {
+  color: #10b981;
+}
+
+.loss-box .box-value {
+  color: #ef4444;
+}
+
+/* Transaction Form Container */
+.transaction-form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin-top: 30px;
+}
+.action-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #edf2f7;
+  color: #4a5568;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.toggle-btn:hover {
+  background: #e2e8f0;
+}
+
+.toggle-btn.active {
+  background: #3182ce;
+  color: white;
+}
+
+.toggle-btn.active:hover {
+  background: #2c5282;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #718096;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 85%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 1px #3182ce;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submit-btn.deposit {
+  background: #38a169;
+  color: white;
+}
+
+.submit-btn.withdraw {
+  background: #e53e3e;
+  color: white;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+}
+
+.submit-btn.deposit:hover {
+  background: #2f855a;
+}
+
+.submit-btn.withdraw:hover {
+  background: #c53030;
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Add Font Awesome for icons (include in your HTML head) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");

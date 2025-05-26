@@ -1,0 +1,210 @@
+/* src/components/Portfolio.css */
+
+.portfolio-container {
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 15px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  user-select: none;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.portfolio-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  letter-spacing: 0.05em;
+}
+
+.portfolio-header p {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin-bottom: 15px;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 14px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.portfolio-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px 8px 0 0;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.portfolio-table tbody tr {
+  background-color: #f4f8fb;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.portfolio-table tbody tr:hover {
+  background-color: #dbe9ff;
+  cursor: pointer;
+}
+
+.portfolio-table tbody tr td {
+  border-bottom: none;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.empty-portfolio {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 40px 0;
+}
+
+.portfolio-loading {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  padding: 30px 0;
+  font-weight: 600;
+}
+.positive {
+  color: green;
+  font-weight: 600;
+}
+
+.negative {
+  color: red;
+  font-weight: 600;
+}
+
+.trade-section {
+  border-top: 2px solid #007bff;
+  padding-top: 15px;
+}
+
+.trade-section h3 {
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.trade-error {
+  background-color: #ffe0e0;
+  border: 1px solid #ff4d4d;
+  color: #b30000;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  user-select: text;
+}
+
+.trade-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trade-form input[type="text"],
+.trade-form input[type="number"],
+.trade-form select {
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  border: 1.8px solid #b0bec5;
+  border-radius: 6px;
+  width: 140px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.trade-form input[type="text"]:focus,
+.trade-form input[type="number"]:focus,
+.trade-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.trade-form button {
+  padding: 12px 26px;
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trade-form button:hover {
+  background: linear-gradient(90deg, #007bff, #339cff);
+  box-shadow: 0 8px 18px rgba(51, 156, 255, 0.6);
+}
+
+.trade-form button:active {
+  background: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 86, 179, 0.8);
+  transform: translateY(1px);
+}
+
+/* Profit/Loss coloring */
+.positive {
+  color: #2ecc71; /* green */
+  font-weight: 700;
+}
+
+.negative {
+  color: #e74c3c; /* red */
+  font-weight: 700;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .portfolio-container {
+    padding: 20px 15px;
+  }
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .trade-form {
+    flex-direction: column;
+  }
+  .trade-form input[type="text"],
+  .trade-form input[type="number"],
+  .trade-form select,
+  .trade-form button {
+    width: 100%;
+  }
+}

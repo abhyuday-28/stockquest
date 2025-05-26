@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #ff5555;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-email {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.toggle-auth-btn {
+  margin-top: 1rem;
+  background-color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
