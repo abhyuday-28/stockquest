@@ -27,21 +27,7 @@ Data: Local JSON mock data
 
 Link: https://drive.google.com/file/d/1DLF87cBaixLPfauQaPD3AUrz0Zj9rEZO/view?usp=sharing
 
-📦 Project Structure
-stockquest/
-│
-├── backend/        # Node.js + Express API
-│   ├── data/       # Mock JSON
-│   ├── routes/
-│   └── server.js
-│
-└── client/         # React frontend
-    ├── src/
-    │   ├── components/
-    │   ├── pages/
-    │   ├── services/
-    │   └── App.js
-    └── public/
+
 
 ⚙️ Running the Project Locally
 1. Clone the repository
